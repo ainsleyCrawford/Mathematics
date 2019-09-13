@@ -1,5 +1,5 @@
 # Mathematics
-Mathematical phenomena, e.g. Fibonacci sequence, prime numbers, etc.
+Mathematical phenomena, e.g. Fibonacci's sequence, prime numbers, etc.
 
-The aim of this repository is to increase my knowledge of C# by developing methods to show desired outputs.
+The aims of this repository are to increase my knowledge of C# and to improve by problem-solving ability.
 An easy code to begin with is the Fibonacci sequence—which is relevant to the Agile methodology.
