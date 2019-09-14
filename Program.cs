@@ -12,7 +12,7 @@ namespace Mathematics
         {
             //Printing Fibonacci numbers less than 500
             Fibonacci_Numbers.Fibonacci();
-            //Prime numbers under 200
+            //Prime numbers under 100
             Prime_Numbers.Prime(); 
             Console.Read();
         }
@@ -40,7 +40,7 @@ namespace Mathematics
             List<int> compositeNumbers = new List<int>();
             for (int i = 1; i < 100; i++)
             {
-                for (int divisor = 2; divisor <= (i/2); divisor++)
+                for (int divisor = 2; divisor <= Math.Sqrt(i); divisor++)
                 {
                     if (i % divisor == 0)
                     {
