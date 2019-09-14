@@ -13,13 +13,19 @@ namespace Mathematics
             //Printing Fibonacci numbers less than 500
             Fibonacci_Numbers.Fibonacci();
             //Prime numbers under 100
-            Prime_Numbers.Prime(); 
+            Prime_Numbers.Prime();
+            //Printing the triangular number of n
+            Triangular_Numbers.TriangularLoop(6); //using a while loop
+            Triangular_Numbers.TriangularFormula(6); //using a formula
+            //Printing the factorial of n
+            Factorial.PrintFactorial(3);
+            Factorial.PrintFactorial(6);
             Console.Read();
         }
     }
     internal class Fibonacci_Numbers
     {
-        public static void Fibonacci()
+        internal static void Fibonacci()
         {
             Console.WriteLine("The Fibonacci numbers below 500 are the following:");
             int a = 0; int b = 1; int c = 0;
@@ -34,7 +40,7 @@ namespace Mathematics
     }
     internal class Prime_Numbers
     {
-        public static void Prime()
+        internal static void Prime()
         {
             Console.WriteLine("The exhaustive list of less-than-two-digit prime numbers is:");
             List<int> compositeNumbers = new List<int>();
@@ -60,6 +66,35 @@ namespace Mathematics
                 }
                 numbersTo100++;
             }
+        }
+    }
+    internal class Triangular_Numbers
+    {
+        internal static void TriangularLoop(int n)
+        {
+            int i = 1; int triangle = 0;
+            while (i <= n)
+            {
+                triangle = triangle + i;
+                i++;
+            }
+            Console.WriteLine("Using a while loop, The nth triangular number of {0} is {1}", n, triangle);
+        }
+        internal static void TriangularFormula(int n)
+        {
+            Console.WriteLine("Using a formula, the triangular number of {0} is {1}", n, n*(n + 1)/2);
+        }
+    }
+    internal class Factorial
+    {
+        internal static void PrintFactorial(int n)
+        {
+            int factorial = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                factorial = factorial * i;
+            }
+            Console.WriteLine("The factorial of {0} is {1}", n, factorial);
         }
     }
 }
