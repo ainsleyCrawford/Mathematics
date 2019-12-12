@@ -5,3 +5,9 @@ C:\Users\Ainsley Crawford\Engineering40\IndividualLearning\Mathematics\obj\Debug
 C:\Users\Ainsley Crawford\Engineering40\IndividualLearning\Mathematics\obj\Debug\Mathematics.csproj.CoreCompileInputs.cache
 C:\Users\Ainsley Crawford\Engineering40\IndividualLearning\Mathematics\obj\Debug\Mathematics.exe
 C:\Users\Ainsley Crawford\Engineering40\IndividualLearning\Mathematics\obj\Debug\Mathematics.pdb
+C:\Users\ainsl\Desktop\GitHub Portfolio\Mathematics\bin\Debug\Mathematics.exe.config
+C:\Users\ainsl\Desktop\GitHub Portfolio\Mathematics\bin\Debug\Mathematics.exe
+C:\Users\ainsl\Desktop\GitHub Portfolio\Mathematics\bin\Debug\Mathematics.pdb
+C:\Users\ainsl\Desktop\GitHub Portfolio\Mathematics\obj\Debug\Mathematics.csprojAssemblyReference.cache
+C:\Users\ainsl\Desktop\GitHub Portfolio\Mathematics\obj\Debug\Mathematics.exe
+C:\Users\ainsl\Desktop\GitHub Portfolio\Mathematics\obj\Debug\Mathematics.pdb

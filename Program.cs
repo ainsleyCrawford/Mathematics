@@ -10,6 +10,8 @@ namespace Mathematics
     {
         static void Main(string[] args)
         {
+            // Improve program using methods which are called by the user from the console
+
             //Printing Fibonacci numbers less than 500
             Fibonacci_Numbers.Fibonacci();
             //Prime numbers under 100
