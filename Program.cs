@@ -29,7 +29,7 @@ namespace Mathematics
                         Prime_Numbers.Prime();
                         break;
                     case 3:
-                        Console.WriteLine("Triangular!");
+                        Triangular_Numbers.TriangularLoop();
                         break;
                     case 4:
                         Console.WriteLine("Factorial!");
@@ -122,20 +122,39 @@ namespace Mathematics
     }
     internal class Triangular_Numbers
     {
-        internal static void TriangularLoop(int n)
+        internal static void TriangularLoop()
         {
-            int i = 1; int triangle = 0;
-            while (i <= n)
+            int n;
+            Console.Write("Enter a value for n to find the corresponding nth triangular number: ");
+            if (Int32.TryParse(Console.ReadLine(), out n))
             {
-                triangle = triangle + i;
-                i++;
+                int i = 1; int triangle = 0;
+                while (i <= n)
+                {
+                    triangle = triangle + i;
+                    i++;
+                }
+                Console.WriteLine("The nth triangular number of {0} is {1}", n, triangle);
             }
-            Console.WriteLine("Using a while loop, The nth triangular number of {0} is {1}", n, triangle);
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
         }
-        internal static void TriangularFormula(int n)
-        {
-            Console.WriteLine("Using a formula, the triangular number of {0} is {1}", n, n*(n + 1)/2);
-        }
+        //internal static void TriangularLoop(int n)
+        //{
+        //    int i = 1; int triangle = 0;
+        //    while (i <= n)
+        //    {
+        //        triangle = triangle + i;
+        //        i++;
+        //    }
+        //    Console.WriteLine("Using a while loop, The nth triangular number of {0} is {1}", n, triangle);
+        //}
+        //internal static void TriangularFormula(int n)
+        //{
+        //    Console.WriteLine("Using a formula, the triangular number of {0} is {1}", n, n*(n + 1)/2);
+        //}
     }
     internal class Factorial
     {
