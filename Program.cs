@@ -16,26 +16,32 @@ namespace Mathematics
             Console.WriteLine("2 - Prime Numbers;");
             Console.WriteLine("3 - Triangular Numbers;");
             Console.WriteLine("4 - Factorial;");
-            int function = Int32.Parse(Console.ReadLine());
-            // Switch statement
-            switch (function)
+            int function;
+            if (Int32.TryParse(Console.ReadLine(), out function))
             {
-                case 1:
-                    Console.WriteLine("Fibonacci!");
-                    break;
-                case 2:
-                    Console.WriteLine("Prime!");
-                    break;
-                case 3:
-                    Console.WriteLine("Triangular!");
-                    break;
-                case 4:
-                    Console.WriteLine("Factorial!");
-                    break;
-                default:
-                    Console.WriteLine("Pardon?");
-                    break;
+                // Switch statement
+                switch (function)
+                {
+                    case 1:
+                        Console.WriteLine("Fibonacci!");
+                        break;
+                    case 2:
+                        Console.WriteLine("Prime!");
+                        break;
+                    case 3:
+                        Console.WriteLine("Triangular!");
+                        break;
+                    case 4:
+                        Console.WriteLine("Factorial!");
+                        break;
+                    default:
+                        Console.WriteLine("Pardon?");
+                        break;
+                }
+            } else {
+                Console.WriteLine("Invalid input");
             }
+            
             //Printing Fibonacci numbers less than 500
             //Fibonacci_Numbers.Fibonacci();
             //Prime numbers under 100
