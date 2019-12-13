@@ -11,7 +11,7 @@ namespace Mathematics
         static void Main(string[] args)
         {
             // Improve program using methods which are called by the user from the console
-            Console.Write("Welcome, user! Type the number which corresponds to the function you would like to use:");
+            Console.WriteLine("Welcome, user! Type the number which corresponds to the function you would like to use:");
             Console.WriteLine("1 - Fibonacci Sequence;");
             Console.WriteLine("2 - Prime Numbers;");
             Console.WriteLine("3 - Triangular Numbers;");
@@ -23,7 +23,7 @@ namespace Mathematics
                 switch (function)
                 {
                     case 1:
-                        Console.WriteLine("Fibonacci!");
+                        Fibonacci_Numbers.Fibonacci();
                         break;
                     case 2:
                         Console.WriteLine("Prime!");
@@ -42,8 +42,6 @@ namespace Mathematics
                 Console.WriteLine("Invalid input");
             }
             
-            //Printing Fibonacci numbers less than 500
-            //Fibonacci_Numbers.Fibonacci();
             //Prime numbers under 100
             //Prime_Numbers.Prime();
             //Printing the triangular number of n
@@ -59,15 +57,30 @@ namespace Mathematics
     {
         internal static void Fibonacci()
         {
-            Console.WriteLine("The Fibonacci numbers below 500 are the following:");
-            int a = 0; int b = 1; int c = 0;
-            while (c < 500)
+            int d;
+            Console.Write("Enter an upper limit for the Fibonacci sequence: ");
+            if (Int32.TryParse(Console.ReadLine(), out d))
             {
-                Console.WriteLine(c);
-                c = a + b;
-                a = b;
-                b = c;
+                Console.WriteLine("The Fibonacci numbers below "+ d +" are the following:");
+                int a = 0; int b = 1; int c = 0;
+                while (c < d)
+                {
+                    Console.Write(c);
+                    c = a + b;
+                    if (c < d)
+                    {
+                        Console.Write(", ");
+                    } else
+                    {
+                        Console.Write(".");
+                    }
+                    a = b;
+                    b = c;
+                }
+            } else {
+                Console.WriteLine("Invalid input");
             }
+
         }
     }
     internal class Prime_Numbers
