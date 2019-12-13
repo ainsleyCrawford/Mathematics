@@ -26,7 +26,7 @@ namespace Mathematics
                         Fibonacci_Numbers.Fibonacci();
                         break;
                     case 2:
-                        Console.WriteLine("Prime!");
+                        Prime_Numbers.Prime();
                         break;
                     case 3:
                         Console.WriteLine("Triangular!");
@@ -42,8 +42,6 @@ namespace Mathematics
                 Console.WriteLine("Invalid input");
             }
             
-            //Prime numbers under 100
-            //Prime_Numbers.Prime();
             //Printing the triangular number of n
             //Triangular_Numbers.TriangularLoop(6); //using a while loop
             //Triangular_Numbers.TriangularFormula(6); //using a formula
@@ -87,29 +85,38 @@ namespace Mathematics
     {
         internal static void Prime()
         {
-            Console.WriteLine("The exhaustive list of less-than-two-digit prime numbers is:");
-            List<int> compositeNumbers = new List<int>();
-            for (int i = 1; i < 100; i++)
+            //Console.WriteLine("The exhaustive list of less-than-two-digit prime numbers is:");
+            int limit;
+            Console.WriteLine("Enter an upper limit for your Prime Number sequence: ");
+            if (Int32.TryParse(Console.ReadLine(), out limit))
             {
-                for (int divisor = 2; divisor <= Math.Sqrt(i); divisor++)
+                Console.WriteLine("The exhaustive list of prime numbers less than " + limit + " is:");
+                List<int> compositeNumbers = new List<int>();
+                for (int i = 1; i < limit; i++)
                 {
-                    if (i % divisor == 0)
+                    for (int divisor = 2; divisor <= Math.Sqrt(i); divisor++)
                     {
-                        compositeNumbers.Add(i);
+                        if (i % divisor == 0)
+                        {
+                            compositeNumbers.Add(i);
+                        }
                     }
                 }
-            }
-            int numbersTo100 = 1;
-            while (numbersTo100 < 100)
+                int numbersTolimit = 1;
+                while (numbersTolimit < limit)
+                {
+                    if (compositeNumbers.Contains(numbersTolimit))
+                    {
+                    }
+                    else
+                    {
+                        Console.Write(numbersTolimit + ", ");
+                    }
+                    numbersTolimit++;
+                }
+            } else
             {
-                if (compositeNumbers.Contains(numbersTo100))
-                {
-                }
-                else
-                {
-                    Console.WriteLine(numbersTo100);
-                }
-                numbersTo100++;
+                Console.WriteLine("Invalid input");
             }
         }
     }
