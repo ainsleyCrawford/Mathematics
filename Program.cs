@@ -11,17 +11,41 @@ namespace Mathematics
         static void Main(string[] args)
         {
             // Improve program using methods which are called by the user from the console
-
+            Console.Write("Welcome, user! Type the number which corresponds to the function you would like to use:");
+            Console.WriteLine("1 - Fibonacci Sequence;");
+            Console.WriteLine("2 - Prime Numbers;");
+            Console.WriteLine("3 - Triangular Numbers;");
+            Console.WriteLine("4 - Factorial;");
+            int function = Int32.Parse(Console.ReadLine());
+            // Switch statement
+            switch (function)
+            {
+                case 1:
+                    Console.WriteLine("Fibonacci!");
+                    break;
+                case 2:
+                    Console.WriteLine("Prime!");
+                    break;
+                case 3:
+                    Console.WriteLine("Triangular!");
+                    break;
+                case 4:
+                    Console.WriteLine("Factorial!");
+                    break;
+                default:
+                    Console.WriteLine("Pardon?");
+                    break;
+            }
             //Printing Fibonacci numbers less than 500
-            Fibonacci_Numbers.Fibonacci();
+            //Fibonacci_Numbers.Fibonacci();
             //Prime numbers under 100
-            Prime_Numbers.Prime();
+            //Prime_Numbers.Prime();
             //Printing the triangular number of n
-            Triangular_Numbers.TriangularLoop(6); //using a while loop
-            Triangular_Numbers.TriangularFormula(6); //using a formula
+            //Triangular_Numbers.TriangularLoop(6); //using a while loop
+            //Triangular_Numbers.TriangularFormula(6); //using a formula
             //Printing the factorial of n
-            Factorial.PrintFactorial(3);
-            Factorial.PrintFactorial(6);
+            //Factorial.PrintFactorial(3);
+            //Factorial.PrintFactorial(6);
             Console.Read();
         }
     }
