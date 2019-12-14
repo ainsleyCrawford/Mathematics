@@ -32,7 +32,7 @@ namespace Mathematics
                         Triangular_Numbers.TriangularLoop();
                         break;
                     case 4:
-                        Console.WriteLine("Factorial!");
+                        Factorial.UserInput();
                         break;
                     default:
                         Console.WriteLine("Pardon?");
@@ -41,13 +41,6 @@ namespace Mathematics
             } else {
                 Console.WriteLine("Invalid input");
             }
-            
-            //Printing the triangular number of n
-            //Triangular_Numbers.TriangularLoop(6); //using a while loop
-            //Triangular_Numbers.TriangularFormula(6); //using a formula
-            //Printing the factorial of n
-            //Factorial.PrintFactorial(3);
-            //Factorial.PrintFactorial(6);
             Console.Read();
         }
     }
@@ -141,23 +134,22 @@ namespace Mathematics
                 Console.WriteLine("Invalid input");
             }
         }
-        //internal static void TriangularLoop(int n)
-        //{
-        //    int i = 1; int triangle = 0;
-        //    while (i <= n)
-        //    {
-        //        triangle = triangle + i;
-        //        i++;
-        //    }
-        //    Console.WriteLine("Using a while loop, The nth triangular number of {0} is {1}", n, triangle);
-        //}
-        //internal static void TriangularFormula(int n)
-        //{
-        //    Console.WriteLine("Using a formula, the triangular number of {0} is {1}", n, n*(n + 1)/2);
-        //}
     }
     internal class Factorial
     {
+        internal static void UserInput()
+        {
+            int input;
+            Console.Write("Enter a number to find it's factorial: ");
+            if (Int32.TryParse(Console.ReadLine(), out input))
+            {
+                PrintFactorial(input);
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
         internal static void PrintFactorial(int n)
         {
             int factorial = 1;
