@@ -17,7 +17,7 @@ To make each function interactive, the user is invited to input the an argument 
     if (Int32.TryParse(Console.ReadLine(), out d))  
       {...}  
     else {Console.WriteLine("Invalid input");}  
-The above structure is used as a filter for each function.
+The code-block above presents the general structure used to filter user input for each function.
 ## The Fibonacci Sequence
 ### Description
 The Fibonacci sequence, one of the most well-known mathematical formulae, is formed by, beginning with the numbers 0 and 1, continually adding the sum of the two preceding numbers to the sequence. This gives the following: 
