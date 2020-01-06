@@ -1,18 +1,19 @@
 # Mathematics
-This console application holds manifold functions that each enact a mathematical phenomenon. The user is invited to input arguments. The current build contains methods for Fibonacci's sequence, prime numbers, triangular numbers and factorials.  
+This console application holds manifold functions that each enact a mathematical phenomenon. The user is invited to input arguments. The current build contains methods for the Fibonacci sequence, prime numbers, triangular numbers and factorials.  
 The objectives of this project are twofold: to improve by problem-solving ability and my knowledge of C#.
 
 ## Table of Contents
 - [User Interface](#user-interface)
-- [Fibonacci's Sequence](#fibonaccis-sequence)  
+- [Fibonacci Sequence](#the-fibonacci-sequence)  
 - [Prime Numbers](#prime-numbers)  
 - [Triangular Numbers](#triangular-numbers)  
 - [Factorials](#factorials)
 - [Cumulated Summation](#cumulated-summation)  
 
 ## User Interface
-## Fibonacci's Sequence
-An easy code to begin with is the Fibonacci sequence—which is relevant to the Agile methodology.
+## The Fibonacci Sequence
+In the Fibonacci sequence, one of the most well-known mathematical formulae, each number is formed by summing the two preceding numbers. When 0 is included, this gives the following: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, etc.
+relevant to the Agile methodology.
 ## Prime Numbers
 ## Triangular Numbers
 ## Factorials
