@@ -4,7 +4,7 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 ### 1. This is my Header
 
 ## Table of Contents
-[Heading IDs](#header)  
+[Heading IDs](#fibonaccis-sequence)  
 
 An easy code to begin with is the Fibonacci sequence—which is relevant to the Agile methodology.
 
