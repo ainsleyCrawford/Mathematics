@@ -11,7 +11,7 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 - [Cumulated Summation](#cumulated-summation)  
 
 ## User Interface
-....
+....  
 To make each function interactive, the user is invited to input the an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. Invalid inputs return the message "Invalid Input". In the case of [the Fibonacci sequence function](#the-fibonacci-sequence) the input, `d`, is verified as the condition for an if statement. 
 
 ## The Fibonacci Sequence
