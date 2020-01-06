@@ -28,6 +28,7 @@ The Fibonacci sequence may be observed in nature. For instance hurricanes and th
 
 ## Prime Numbers
 ### Description
+A positive integer that is the product of two smaller numbers is called composite; all other positive integers greater than 1 are prime. Prime numbers are prominent in number theory because every composite may be factorised into a unique set of prime numbers. This function lists all prime numbers up to a user-specified upper limit.
 ### Logic
 ## Triangular Numbers
 ### Description
