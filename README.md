@@ -12,12 +12,11 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 
 ## User Interface
 ....  
-To make each function interactive, the user is invited to input the an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. Invalid inputs return the message "Invalid Input". In the case of [the Fibonacci sequence function](#the-fibonacci-sequence) the input, `d`, is the sequence's upper limit. This argument is verified as the condition for an if statement:
+To make each function interactive, the user is invited to input the an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. This argument is verified as the condition for an if statement which returns the message "Invalid Input" for invalid inputs. The code block below presents the general structure used to filter user input for each function:
 
     if (Int32.TryParse(Console.ReadLine(), out d))  
       {...}  
     else {Console.WriteLine("Invalid input");}  
-The code-block above presents the general structure used to filter user input for each function.
 ## The Fibonacci Sequence
 ### Description
 The Fibonacci sequence, one of the most well-known mathematical formulae, is formed by, beginning with the numbers 0 and 1, continually adding the sum of the two preceding numbers to the sequence. This gives the following: 
