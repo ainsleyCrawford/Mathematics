@@ -11,6 +11,8 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 - [Cumulated Summation](#cumulated-summation)  
 
 ## User Interface
+....
+To make each function interactive, the user is invited to input the an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. In the case of [the Fibonacci sequence](#the-fibonacci-sequence) : `(Int32.TryParse(Console.ReadLine(), out d))`.
 ## The Fibonacci Sequence
 ### Description
 The Fibonacci sequence, one of the most well-known mathematical formulae, is formed by, beginning with the numbers 0 and 1, continually adding the sum of the two preceding numbers to the sequence. This gives the following: 
@@ -18,6 +20,8 @@ The Fibonacci sequence, one of the most well-known mathematical formulae, is for
 
 The Fibonacci sequence may be observed in nature. For instance hurricanes and the shape of human faces follow the rule. Applications of the sequence includes music, architecture and, interestingly for us, Agile. In the latter, Agile-team members choose a Fibonacci number from 1 to 21 to estimate either the time or effort required for a user story. 
 ### Logic
+
+
 ## Prime Numbers
 ### Description
 ### Logic
