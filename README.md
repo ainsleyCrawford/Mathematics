@@ -12,7 +12,28 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 
 ## User Interface
 ....
-To make each function interactive, the user is invited to input the an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. In the case of [the Fibonacci sequence](#the-fibonacci-sequence) : `(Int32.TryParse(Console.ReadLine(), out d))`.
+To make each function interactive, the user is invited to input the an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. In the case of [the Fibonacci sequence function](#the-fibonacci-sequence) the input, `d`, is verified. 
+  `if (Int32.TryParse(Console.ReadLine(), out d))
+              {
+                  Console.WriteLine("The Fibonacci numbers below "+ d +" are the following:");
+                  int a = 0; int b = 1; int c = 0;
+                  while (c < d)
+                  {
+                      Console.Write(c);
+                      c = a + b;
+                      if (c < d)
+                      {
+                          Console.Write(", ");
+                      } else
+                      {
+                          Console.Write(".");
+                      }
+                      a = b;
+                      b = c;
+                 }
+              } else {
+                  Console.WriteLine("Invalid input");
+              }`
 ## The Fibonacci Sequence
 ### Description
 The Fibonacci sequence, one of the most well-known mathematical formulae, is formed by, beginning with the numbers 0 and 1, continually adding the sum of the two preceding numbers to the sequence. This gives the following: 
