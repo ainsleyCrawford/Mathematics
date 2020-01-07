@@ -11,12 +11,8 @@ namespace Mathematics
         static void Main(string[] args)
         {
             // Improve program using methods which are called by the user from the console
-            Console.WriteLine("Welcome, user! Type the number which corresponds to the function you would like to use:");
-            Console.WriteLine("1 - Fibonacci Sequence;");
-            Console.WriteLine("2 - Prime Numbers;");
-            Console.WriteLine("3 - Triangular Numbers;");
-            Console.WriteLine("4 - Factorial;");
-            Console.WriteLine("5 - Heaxagonal Numbers;");
+            Console.WriteLine("Welcome, user! Type the number which corresponds to the function you would like to use: \n " +
+                "1 - Fibonacci Sequence; \n 2 - Prime Numbers; \n 3 - Triangular Numbers; \n 4 - Factorial; \n 5 - Heaxagonal Numbers;");
             int function;
             if (Int32.TryParse(Console.ReadLine(), out function))
             {
