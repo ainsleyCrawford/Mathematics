@@ -45,6 +45,7 @@ If a particular number of equally spaced dots can form an equilateral triangle (
 ### Logic
 ## Factorials
 ### Description
+To find the factorial of a positive integer multiply that integer by all lesser positive integers. Thus, the factorial of five is found by multiplying five by four, three and two, resulting in 120.
 ### Logic
 ## Cumulated Summation
 ### Description
@@ -52,7 +53,7 @@ This function reads a a user input (which must be a positive whole number) and s
 ### Logic
 ## Hexagonal Numbers
 ### Description
-Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots forms the outline(s) of regular hexagons where all hexagons share a single vertex.
+Beginning with 1 every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots forms the outline(s) of regular hexagons where all hexagons share a single vertex.
 
     O             O O             O O O              O O O O
                 O     O         O       O          O         O
