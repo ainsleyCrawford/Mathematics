@@ -28,7 +28,9 @@ The Fibonacci sequence, one of the most well-known mathematical formulae, is for
 
 The Fibonacci sequence may be observed in nature. For instance hurricanes and the shape of human faces follow the rule. Applications of the sequence includes music, architecture and, interestingly for us, Agile. In the latter, Agile-team members choose a Fibonacci number from 1 to 21 to estimate either the time or effort required for a user story. 
 ### Logic
+*n<sub>i</sub> = n<sub>i-1</sub> + n<sub>i-2</sub>*.
 
+This sequence requires two numbers to be added to generate a third, so three variables were initialised as follows: `int a = 0; int b = 1; int c = 0;`. A fourth, `d`, is the user-specified limit of the Fibonacci sequence. While `c < d`, `c` is printed to the console before `c` is assigned the value of `a + b`, `a` assigned the value of `b` and `b` assigned the value of `a`.
 ## Prime Numbers
 ### Description
 A positive integer that is the product of two smaller numbers is called composite; all other positive integers greater than 1 are prime. Prime numbers are prominent in number theory because every composite may be factorised into a unique set of prime numbers. This function lists all prime numbers up to a user-specified upper limit.
@@ -64,5 +66,5 @@ Beginning with 1 every other [triangular number](#triangular-numbers) is a hexag
                                                      O O O O              O   O O     O O O
                                                                             O     O O O O
                                                                               O O O O O
-*Figure 2: The first four hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
+*Figure 2: The first five hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
 ### Logic
