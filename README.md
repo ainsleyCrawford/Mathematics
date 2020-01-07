@@ -8,7 +8,6 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 - [Prime Numbers](#prime-numbers)  
 - [Triangular Numbers](#triangular-numbers)  
 - [Factorials](#factorials)
-- [Cumulated Summation](#cumulated-summation) 
 - [Hexagonal Numbers](#hexagonal-numbers)  
 
 ## User Interface
@@ -46,14 +45,11 @@ If a particular number of equally spaced dots can form an equilateral triangle (
                                                                               O                   O O
                                                                                                    O
 *Figure 1: The first seven triangular numbers represented diagrammatically.*
+This function, thus, reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
 ### Logic
 ## Factorials
 ### Description
 To find the factorial of a positive integer multiply that integer by all lesser positive integers. Thus, the factorial of five is found by multiplying five by four, three and two, resulting in 120.
-### Logic
-## Cumulated Summation
-### Description
-This function reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
 ### Logic
 ## Hexagonal Numbers
 ### Description
