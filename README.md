@@ -31,7 +31,7 @@ A positive integer that is the product of two smaller numbers is called composit
 ### Logic
 ## Triangular Numbers
 ### Description
-[try](#figure-1)
+If a particular number of equally spaced dots can form an equilateral triangle (Figure 1), that number may be called triangular.
 
     O           O O         O O O       O O O O         O O O O O        O O O O O O         O O O O O O O
                 O           O O         O O O           O O O O          O O O O O           O O O O O O
@@ -40,7 +40,7 @@ A positive integer that is the product of two smaller numbers is called composit
                                                         O                O O                 O O O
                                                                          O                   O O
                                                                                              O
-*Figure 1: The first seven triangular numbers represented diagrammatically.*
+*#Figure 1: The first seven triangular numbers represented diagrammatically.*
 ### Logic
 ## Factorials
 ### Description
