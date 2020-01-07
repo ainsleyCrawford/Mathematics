@@ -47,9 +47,12 @@ If a particular number of equally spaced dots can form an equilateral triangle (
                                                             O                O O                 O O O
                                                                               O                   O O
                                                                                                    O
-*Figure 1: The first seven triangular numbers represented diagrammatically.*
+*Figure 1: The first seven triangular numbers represented diagrammatically.*  
 This function, thus, reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
 ### Logic
+Following the pattern in Figure 1, two variables were initialised: `int i = 1`, where `i` is the iteration; and `int triangle = 0`, which represents triangular numbers. The following while loop was, then, sufficient: 
+
+    while (i <= n){ triangle += i; i++; }
 ## Factorials
 ### Description
 To find the factorial of a positive integer multiply that integer by all lesser positive integers. Thus, the factorial of five is found by multiplying five by four, three and two, resulting in 120.
