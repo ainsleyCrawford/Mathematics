@@ -35,12 +35,12 @@ A positive integer that is the product of two smaller numbers is called composit
 If a particular number of equally spaced dots can form an equilateral triangle (Figure 1), that number may be called triangular.
 
     O           O O         O O O       O O O O         O O O O O        O O O O O O         O O O O O O O
-                O           O O         O O O           O O O O          O O O O O           O O O O O O
-                            O           O O             O O O            O O O O             O O O O O
-                                        O               O O              O O O               O O O O
-                                                        O                O O                 O O O
-                                                                         O                   O O
-                                                                                             O
+                 O           O O         O O O           O O O O          O O O O O           O O O O O O
+                              O           O O             O O O            O O O O             O O O O O
+                                           O               O O              O O O               O O O O
+                                                            O                O O                 O O O
+                                                                              O                   O O
+                                                                                                   O
 *Figure 1: The first seven triangular numbers represented diagrammatically.*
 ### Logic
 ## Factorials
