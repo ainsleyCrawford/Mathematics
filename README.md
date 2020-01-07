@@ -55,12 +55,14 @@ To find the factorial of a positive integer multiply that integer by all lesser 
 ### Description
 Beginning with 1 every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots forms the outline(s) of regular hexagons where all hexagons share a single vertex.
 
-    O             O O             O O O              O O O O
-                O     O         O       O          O         O
-                  O O         O   O O     O      O   O O O     O
-                                O     O O      O   O       O     O
-                                  O O O          O   O O     O O
-                                                   O     O O O
-                                                     O O O O
+    O             O O             O O O              O O O O                  O O O O O
+                O     O         O       O          O         O              O           O
+                  O O         O   O O     O      O   O O O     O          O   O O O O     O
+                                O     O O      O   O       O     O      O   O         O     O
+                                  O O O          O   O O     O O      O   O   O O O     O     O
+                                                   O     O O O          O   O       O     O O
+                                                     O O O O              O   O O     O O O
+                                                                            O     O O O O
+                                                                              O O O O O
 *Figure 2: The first four hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
 ### Logic
