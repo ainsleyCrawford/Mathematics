@@ -16,6 +16,8 @@ namespace Mathematics
             Console.WriteLine("2 - Prime Numbers;");
             Console.WriteLine("3 - Triangular Numbers;");
             Console.WriteLine("4 - Factorial;");
+            Console.WriteLine("5 - Cumulative Summation;");
+            Console.WriteLine("6 - Heaxagonal Numbers;");
             int function;
             if (Int32.TryParse(Console.ReadLine(), out function))
             {
@@ -33,6 +35,12 @@ namespace Mathematics
                         break;
                     case 4:
                         Factorial.UserInput();
+                        break;
+                    case 5:
+                        //Cumulative_Summation
+                        break;
+                    case 6:
+                        //Hexagonal_Numbers
                         break;
                     default:
                         Console.WriteLine("Pardon?");
@@ -159,5 +167,13 @@ namespace Mathematics
             }
             Console.WriteLine("The factorial of {0} is {1}", n, factorial);
         }
+    }
+    internal class Cumulative_Summation
+    {
+
+    }
+    internal class Hexagonal_Numbers
+    {
+
     }
 }
