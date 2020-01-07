@@ -25,13 +25,22 @@ The Fibonacci sequence, one of the most well-known mathematical formulae, is for
 The Fibonacci sequence may be observed in nature. For instance hurricanes and the shape of human faces follow the rule. Applications of the sequence includes music, architecture and, interestingly for us, Agile. In the latter, Agile-team members choose a Fibonacci number from 1 to 21 to estimate either the time or effort required for a user story. 
 ### Logic
 
-
 ## Prime Numbers
 ### Description
 A positive integer that is the product of two smaller numbers is called composite; all other positive integers greater than 1 are prime. Prime numbers are prominent in number theory because every composite may be factorised into a unique set of prime numbers. This function lists all prime numbers up to a user-specified upper limit.
 ### Logic
 ## Triangular Numbers
 ### Description
+
+
+    O           O O         O O O       O O O O         O O O O O        O O O O O O         O O O O O O O
+                O           O O         O O O           O O O O          O O O O O           O O O O O O
+                            O           O O             O O O            O O O O             O O O O O
+                                        O               O O              O O O               O O O O
+                                                        O                O O                 O O O
+                                                                         O                   O O
+                                                                                             O
+
 ### Logic
 ## Factorials
 ### Description
