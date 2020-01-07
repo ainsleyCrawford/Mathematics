@@ -61,5 +61,5 @@ Beginning with 1, every other [triangular number](#triangular-numbers) is a hexa
                                   O O O          O   O O     O O
                                                    O     O O O
                                                      O O O O
-*Figure 2: The first four hexagonal numbers represented diagrammatically.*
+*Figure 2: The first four hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
 ### Logic
