@@ -40,7 +40,7 @@ If a particular number of equally spaced dots can form an equilateral triangle (
                                                         O                O O                 O O O
                                                                          O                   O O
                                                                                              O
-*#Figure 1: The first seven triangular numbers represented diagrammatically.*
+*Figure 1: The first seven triangular numbers represented diagrammatically.*
 ### Logic
 ## Factorials
 ### Description
@@ -48,4 +48,16 @@ If a particular number of equally spaced dots can form an equilateral triangle (
 ## Cumulated Summation
 ### Description
 This function reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
+### Logic
+## Hexagonal Numbers
+### Description
+
+    O             O O             O O O              O O O O
+                O     O         O       O          O         O
+                  O O         O   O O     O      O   O O O     O
+                                O     O O      O   O       O     O
+                                  O O O          O   O O     O O
+                                                   O     O O O
+                                                     O O O O
+
 ### Logic
