@@ -35,8 +35,7 @@ This sequence requires two numbers to be added to generate a third, so three var
 ### Description
 A positive integer that is the product of two smaller numbers is called composite; all other positive integers greater than 1 are prime. Prime numbers are prominent in number theory because every composite may be factorised into a unique set of prime numbers. This function lists all prime numbers up to a user-specified upper limit.
 ### Logic
-Given that all positive integers are either composite or prime, and all composite numbers are multiples of prime numbers, the solution chosen was to add all composite numbers to a list and print to the console all numbers not in this list.
-....
+Given that all positive integers are either composite or prime, and all composite numbers are multiples of prime numbers, the solution chosen was to add all composite numbers to a list and print to the console all numbers not in this list. The for loop `for (int divisor = 2; divisor <= Math.Sqrt(i); divisor++)` divides every integer from up to the user-specfied limit against divisors which increment from two to the square root of the limit. It was observed that surpassing the square root is excessive because all composite numbers have a prime factor less than the square root.
 ## Triangular Numbers
 ### Description
 If a particular number of equally spaced dots can form an equilateral triangle (Figure 1), that number may be called triangular.
