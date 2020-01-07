@@ -52,7 +52,7 @@ This function reads a a user input (which must be a positive whole number) and s
 ### Logic
 ## Hexagonal Numbers
 ### Description
-Beginning with 1, every other triangular number is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots forms the outline(s) of regular hexagons where all hexagons share a single vertex.
+Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots forms the outline(s) of regular hexagons where all hexagons share a single vertex.
 
     O             O O             O O O              O O O O
                 O     O         O       O          O         O
