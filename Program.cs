@@ -16,7 +16,7 @@ namespace Mathematics
             Console.WriteLine("2 - Prime Numbers;");
             Console.WriteLine("3 - Triangular Numbers;");
             Console.WriteLine("4 - Factorial;");
-            Console.WriteLine("6 - Heaxagonal Numbers;");
+            Console.WriteLine("5 - Heaxagonal Numbers;");
             int function;
             if (Int32.TryParse(Console.ReadLine(), out function))
             {
@@ -36,7 +36,7 @@ namespace Mathematics
                         Factorial.UserInput();
                         break;
                     case 5:
-                        //Hexagonal_Numbers
+                        Hexagonal_Numbers.HexagonalLoop();
                         break;
                     default:
                         Console.WriteLine("Pardon?");
@@ -75,7 +75,6 @@ namespace Mathematics
             } else {
                 Console.WriteLine("Invalid input");
             }
-
         }
     }
     internal class Prime_Numbers
@@ -128,7 +127,7 @@ namespace Mathematics
                 int i = 1; int triangle = 0;
                 while (i <= n)
                 {
-                    triangle = triangle + i;
+                    triangle += i;
                     i++;
                 }
                 Console.WriteLine("The nth triangular number of {0} is {1}", n, triangle);
@@ -166,6 +165,24 @@ namespace Mathematics
     }
     internal class Hexagonal_Numbers
     {
-
+        internal static void HexagonalLoop()
+        {
+            int n;
+            Console.Write("Enter a value for n to find the corresponding nth hexagonal number: ");
+            if (Int32.TryParse(Console.ReadLine(), out n))
+            {
+                int i = 1; int hexagon = 0;
+                while (i <= (n*2)-1)
+                {
+                    hexagon += i;
+                    i++;
+                }
+                Console.WriteLine("The nth hexagonal number of {0} is {1}", n, hexagon);
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
     }
 }
