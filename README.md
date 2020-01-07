@@ -13,7 +13,7 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 
 ## User Interface
 ....  
-To make each function interactive, the user is invited to input the an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. This argument is verified as the condition for an if statement which returns the message "Invalid Input" for invalid inputs. The code block below presents the general structure used to filter user input for each function:
+To make each function interactive, the user is invited to input an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. This argument is verified as the condition for an if statement which returns the message "Invalid Input" for invalid inputs. The code block below presents the general structure used to filter user input for each function:
 
     if (Int32.TryParse(Console.ReadLine(), out input))  
       {...}  
