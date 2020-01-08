@@ -55,8 +55,12 @@ Following the pattern in Figure 1, two variables were initialised: `int i = 1`, 
     while (i <= n){ triangle += i; i++; }
 ## Factorials
 ### Description
-To find the factorial of a positive integer multiply that integer by all lesser positive integers. Thus, the factorial of five is found by multiplying five by four, three and two, resulting in 120.
+To find the factorial of a positive integer multiply that integer by all lesser positive integers. Thus, the factorial of five is found by multiplying five by four, three and two, resulting in 120. This is written notationally as *5! = 5 x 4 x 3 x 2 x 1 = 120*.
 ### Logic
+*n! = n x (n - 1) x (n - 2) x ... x 2 x 1*
+
+The following for loop multiplies the variable `factorial` by the next increment of `i` until the user-specified input `n`:  
+`for (int i = 1; i <= n; i++) { factorial *= i; }`.
 ## Hexagonal Numbers
 ### Description
 Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots form the outline(s) of regular hexagons where all hexagons share a single vertex.
