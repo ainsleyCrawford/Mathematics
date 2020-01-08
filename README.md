@@ -72,7 +72,7 @@ Beginning with 1, every other [triangular number](#triangular-numbers) is a hexa
                                                                               O O O O O
 *Figure 2: The first five hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
 ### Logic
-Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~, 15, ~~21~~, 28, ~~36~~, 45, ~~55~~, 66, ~~78~~, ad infinitum. Table 1 helps us to further understand this relationship: n<sub>h</sub> = 2\*n<sub>t</sub> - 1. For instance, the fourth hexagonal number (n<sub>h</sub>) and the seventh triangular number (n<sub>t</sub>) are equal (28).
+Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~, 15, ~~21~~, 28, ~~36~~, 45, ~~55~~, 66, ~~78~~, ad infinitum. Table 1 helps us to further understand this relationship: *n<sub>h</sub> = 2\*n<sub>t</sub> - 1*. For instance, the fourth hexagonal number (*n<sub>h</sub> = 4*) and the seventh triangular number (*n<sub>t</sub> = 7*) are equal (*28*).
 
 |n              |1              |2              |3              |4              |5              |6              |7              |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
