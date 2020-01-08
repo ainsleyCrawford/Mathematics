@@ -59,7 +59,7 @@ To find the factorial of a positive integer multiply that integer by all lesser 
 ### Logic
 ## Hexagonal Numbers
 ### Description
-Beginning with 1 every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots forms the outline(s) of regular hexagons where all hexagons share a single vertex.
+Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots form the outline(s) of regular hexagons where all hexagons share a single vertex.
 
     O             O O             O O O              O O O O                  O O O O O
                 O     O         O       O          O         O              O           O
@@ -72,3 +72,11 @@ Beginning with 1 every other [triangular number](#triangular-numbers) is a hexag
                                                                               O O O O O
 *Figure 2: The first five hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
 ### Logic
+Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~, 15, ~~21~~, 28, ~~36~~, 45, ~~55~~, 66, ~~78~~, ad infinitum. Table 1 helps us to further understand this relationship.
+
+|n              |1              |2              |3              |4              |5              |6              |7              |
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|Triangles      |**1**          |3              |**6**          |10             |**15**         |21             |**28**         |
+|Hexagons       |**1**          |**6**          |**15**         |**28**         |45             |66             |91             |
+
+*Table 1: ...*
