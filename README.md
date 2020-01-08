@@ -81,4 +81,4 @@ Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~
 
 *Table 1: A visual aid to deduce the relationship between triangular and hexagonal numbers with respect to n.*
 
-Thus, to modify the triangular-number while loop into a hexagonal-number while loop, `n` was edited to `(n*2)-1`: `while (i <= (n*2)-1) { hexagon += i; i++; }`.
+Thus, to modify the triangular-number while loop into a hexagonal-number while loop, the condition was edited by replacing `n` with `(n*2)-1`: `while (i <= (n*2)-1) { hexagon += i; i++; }`.
