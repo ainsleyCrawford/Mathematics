@@ -12,11 +12,10 @@ namespace Mathematics
         {
             Console.Write("Welcome, user! ");
             User_Interface();
-            Console.WriteLine("Har haar");
         }
-        static void User_Interface()
+        internal static void User_Interface()
         {
-            Console.WriteLine("Type the number which corresponds to the function you would like to use: \n " +
+            Console.WriteLine("Enter the number which corresponds to the function you would like to use: \n " +
                 "1 - Fibonacci Sequence; \n 2 - Prime Numbers; \n 3 - Triangular Numbers; \n 4 - Factorial; \n 5 - Heaxagonal Numbers;");
             int function;
             if (Int32.TryParse(Console.ReadLine(), out function))
@@ -39,13 +38,15 @@ namespace Mathematics
                         Hexagonal_Numbers.HexagonalLoop();
                         break;
                     default:
-                        Console.WriteLine("Pardon?");
+                        Console.Write("{0} is not an option. ", function);
+                        User_Interface();
                         break;
                 }
             }
             else
             {
-                Console.WriteLine("Invalid input");
+                Console.Write("Invalid input");
+                User_Interface();
             }
             Console.Read();
         }
@@ -79,6 +80,20 @@ namespace Mathematics
             else
             {
                 Console.WriteLine("Invalid input");
+            }
+            Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
+            switch (Console.ReadKey().Key)
+            {
+                case ConsoleKey.D1:
+                    Console.Clear();
+                    Fibonacci(); ;
+                    break;
+                case ConsoleKey.D2:
+                    Console.Clear();
+                    Program.User_Interface(); ;
+                    break;
+                default:
+                    break;
             }
         }
     }
