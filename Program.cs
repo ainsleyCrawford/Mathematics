@@ -10,13 +10,17 @@ namespace Mathematics
     {
         static void Main(string[] args)
         {
-            // Improve program using methods which are called by the user from the console
-            Console.WriteLine("Welcome, user! Type the number which corresponds to the function you would like to use: \n " +
+            Console.Write("Welcome, user! ");
+            User_Interface();
+            Console.WriteLine("Har haar");
+        }
+        static void User_Interface()
+        {
+            Console.WriteLine("Type the number which corresponds to the function you would like to use: \n " +
                 "1 - Fibonacci Sequence; \n 2 - Prime Numbers; \n 3 - Triangular Numbers; \n 4 - Factorial; \n 5 - Heaxagonal Numbers;");
             int function;
             if (Int32.TryParse(Console.ReadLine(), out function))
             {
-                // Switch statement
                 switch (function)
                 {
                     case 1:
@@ -38,7 +42,9 @@ namespace Mathematics
                         Console.WriteLine("Pardon?");
                         break;
                 }
-            } else {
+            }
+            else
+            {
                 Console.WriteLine("Invalid input");
             }
             Console.Read();
@@ -61,14 +67,17 @@ namespace Mathematics
                     if (c < d)
                     {
                         Console.Write(", ");
-                    } else
+                    } 
+                    else
                     {
                         Console.Write(".");
                     }
                     a = b;
                     b = c;
                 }
-            } else {
+            }
+            else
+            {
                 Console.WriteLine("Invalid input");
             }
         }
@@ -77,7 +86,6 @@ namespace Mathematics
     {
         internal static void Prime()
         {
-            //Console.WriteLine("The exhaustive list of less-than-two-digit prime numbers is:");
             int limit;
             Console.WriteLine("Enter an upper limit for your Prime Number sequence: ");
             if (Int32.TryParse(Console.ReadLine(), out limit))
@@ -106,7 +114,8 @@ namespace Mathematics
                     }
                     numbersTolimit++;
                 }
-            } else
+            } 
+            else
             {
                 Console.WriteLine("Invalid input");
             }
@@ -154,7 +163,7 @@ namespace Mathematics
             int factorial = 1;
             for (int i = 1; i <= n; i++)
             {
-                factorial = factorial * i;
+                factorial *= i;
             }
             Console.WriteLine("The factorial of {0} is {1}", n, factorial);
         }
