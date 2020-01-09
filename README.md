@@ -3,24 +3,13 @@ This console application holds manifold functions that each enact a mathematical
 The objectives of this project are twofold: to improve by problem-solving ability and my knowledge of C#.
 
 ## Table of Contents
-- [User Interface](#user-interface)
 - [Fibonacci Sequence](#the-fibonacci-sequence)  
 - [Prime Numbers](#prime-numbers)  
 - [Triangular Numbers](#triangular-numbers)  
 - [Factorials](#factorials)
 - [Hexagonal Numbers](#hexagonal-numbers)  
+- [User Interface](#user-interface)
 
-## User Interface
-Upon opening the application the user is welcomed and presented with the exhaustive list of functions:
-
-    Console.WriteLine("Welcome, user! Type the number which corresponds to the function you would like to use:");
-Each number represents a case in a switch statement that calls a particular function via its class. For instance, to case to call the triangular numbers method, `TriangularLoop()`, in the triangular numbers class, `Triangular_Numbers`, is the following: `case 3: Triangular_Numbers.TriangularLoop();`.
-
-To make each function interactive, the user is invited to input an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. This argument is verified as the condition for an if statement which returns the message "Invalid Input" for invalid inputs. The code block below presents the general structure used to filter user input for each function:
-
-    if (Int32.TryParse(Console.ReadLine(), out input))  
-      {...}  
-    else {Console.WriteLine("Invalid input");}  
 ## The Fibonacci Sequence
 ### Description
 The Fibonacci sequence, one of the most well-known mathematical formulae, is formed by, beginning with the numbers 0 and 1, continually adding the sum of the two preceding numbers to the sequence. This gives the following: 
@@ -86,3 +75,14 @@ Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~
 *Table 1: A visual aid to deduce the relationship between triangular and hexagonal numbers with respect to n.*
 
 Thus, to modify the triangular-number while loop into a hexagonal-number while loop, the condition was edited by replacing `n` with `(n*2)-1`, which gave the following: `while (i <= (n*2)-1) { hexagon += i; i++; }`.
+## User Interface
+Upon opening the application the user is welcomed and presented with the exhaustive list of functions:
+
+    Console.WriteLine("Welcome, user! Type the number which corresponds to the function you would like to use:");
+Each number represents a case in a switch statement that calls a particular function via its class. For instance, to case to call the triangular numbers method, `TriangularLoop()`, in the triangular numbers class, `Triangular_Numbers`, is the following: `case 3: Triangular_Numbers.TriangularLoop();`.
+
+To make each function interactive, the user is invited to input an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. This argument is verified as the condition for an if statement which returns the message "Invalid Input" for invalid inputs. The code block below presents the general structure used to filter user input for each function:
+
+    if (Int32.TryParse(Console.ReadLine(), out input))  
+      {...}  
+    else {Console.WriteLine("Invalid input");} 
