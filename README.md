@@ -46,7 +46,7 @@ Following the pattern in Figure 1, two variables were initialised: `int i = 1`, 
 ### Description
 To find the factorial of a positive integer multiply that integer by all lesser positive integers. Thus, the factorial of five is found by multiplying five by four, three and two, resulting in 120. This is written notationally as *5! = 5 x 4 x 3 x 2 x 1 = 120*.
 ### Logic
-<p align="center"><i>n! = n x (n - 1) x (n - 2) x ... x 2 x 1<i>.</p>
+<p align="center"><i>n! = n x (n - 1) x (n - 2) x ... x 2 x 1</i>.</p>
 
 The following for loop multiplies the variable `factorial` by the next increment of `i` until the user-specified input `n`:  
 `for (int i = 1; i <= n; i++) { factorial *= i; }`.
