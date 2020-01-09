@@ -32,7 +32,7 @@ namespace Mathematics
                         Triangular_Numbers.TriangularLoop();
                         break;
                     case 4:
-                        Factorial.UserInput();
+                        Factorial.PrintFactorial();
                         break;
                     case 5:
                         Hexagonal_Numbers.HexagonalLoop();
@@ -134,6 +134,20 @@ namespace Mathematics
             {
                 Console.WriteLine("Invalid input");
             }
+            Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
+            switch (Console.ReadKey().Key)
+            {
+                case ConsoleKey.D1:
+                    Console.Clear();
+                    Prime(); ;
+                    break;
+                case ConsoleKey.D2:
+                    Console.Clear();
+                    Program.User_Interface(); ;
+                    break;
+                default:
+                    break;
+            }
         }
     }
     internal class Triangular_Numbers
@@ -156,31 +170,54 @@ namespace Mathematics
             {
                 Console.WriteLine("Invalid input");
             }
+            Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
+            switch (Console.ReadKey().Key)
+            {
+                case ConsoleKey.D1:
+                    Console.Clear();
+                    TriangularLoop(); ;
+                    break;
+                case ConsoleKey.D2:
+                    Console.Clear();
+                    Program.User_Interface(); ;
+                    break;
+                default:
+                    break;
+            }
         }
     }
     internal class Factorial
     {
-        internal static void UserInput()
+        internal static void PrintFactorial()
         {
-            int input;
+            int n;
             Console.Write("Enter a number to find it's factorial: ");
-            if (Int32.TryParse(Console.ReadLine(), out input))
+            if (Int32.TryParse(Console.ReadLine(), out n))
             {
-                PrintFactorial(input);
+                int factorial = 1;
+                for (int i = 1; i <= n; i++)
+                {
+                    factorial *= i;
+                }
+                Console.WriteLine("The factorial of {0} is {1}", n, factorial); ;
             }
             else
             {
                 Console.WriteLine("Invalid input");
             }
-        }
-        internal static void PrintFactorial(int n)
-        {
-            int factorial = 1;
-            for (int i = 1; i <= n; i++)
+            switch (Console.ReadKey().Key)
             {
-                factorial *= i;
+                case ConsoleKey.D1:
+                    Console.Clear();
+                    PrintFactorial(); ;
+                    break;
+                case ConsoleKey.D2:
+                    Console.Clear();
+                    Program.User_Interface(); ;
+                    break;
+                default:
+                    break;
             }
-            Console.WriteLine("The factorial of {0} is {1}", n, factorial);
         }
     }
     internal class Hexagonal_Numbers
@@ -202,6 +239,20 @@ namespace Mathematics
             else
             {
                 Console.WriteLine("Invalid input");
+            }
+            Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
+            switch (Console.ReadKey().Key)
+            {
+                case ConsoleKey.D1:
+                    Console.Clear();
+                    HexagonalLoop(); ;
+                    break;
+                case ConsoleKey.D2:
+                    Console.Clear();
+                    Program.User_Interface(); ;
+                    break;
+                default:
+                    break;
             }
         }
     }
