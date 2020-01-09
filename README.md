@@ -13,7 +13,7 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 ## The Fibonacci Sequence
 ### Description
 The Fibonacci sequence, one of the most well-known mathematical formulae, is formed by, beginning with the numbers 0 and 1, continually adding the sum of the two preceding numbers to the sequence. This gives the following: 
-> 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, ad infinitum.
+*0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, ad infinitum.*
 
 The Fibonacci sequence may be observed in nature. For instance hurricanes and the shape of human faces follow the rule. Applications of the sequence includes music, architecture and, interestingly for us, Agile. In the latter, Agile-team members choose a Fibonacci number from 1 to 21 to estimate either the time or effort required for a user story. 
 ### Logic
@@ -76,13 +76,16 @@ Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~
 
 Thus, to modify the triangular-number while loop into a hexagonal-number while loop, the condition was edited by replacing `n` with `(n*2)-1`, which gave the following: `while (i <= (n*2)-1) { hexagon += i; i++; }`.
 ## User Interface
+The Main method contains only two statements: `Console.Write("Welcome, user! ");` and `User_Interface();`. The logic behind this is to allow the user to cycle through the all other program methods as much as she/he desires before returning to the Main method, and thus, closing the console application.
+
 Upon opening the application the user is welcomed and presented with the exhaustive list of functions:
 
     Console.WriteLine("Welcome, user! Type the number which corresponds to the function you would like to use:");
-Each number represents a case in a switch statement that calls a particular function via its class. For instance, to case to call the triangular numbers method, `TriangularLoop()`, in the triangular numbers class, `Triangular_Numbers`, is the following: `case 3: Triangular_Numbers.TriangularLoop();`.
+Each number represents a case in a switch statement that calls a particular function via its class. For instance, the case to call the triangular numbers method, `TriangularLoop()`, in the triangular numbers class, `Triangular_Numbers`, is the following: `case 3: Triangular_Numbers.TriangularLoop();`.
 
 To make each function interactive, the user is invited to input an argument to pass in. This has been achieved in each method using the TryParse method which reads an integer from the console. This argument is verified as the condition for an if statement which returns the message "Invalid Input" for invalid inputs. The code block below presents the general structure used to filter user input for each function:
 
     if (Int32.TryParse(Console.ReadLine(), out input))  
       {...}  
     else {Console.WriteLine("Invalid input");} 
+At this point another switch statement reads the user's key press to either call the function it belongs to, call the menu of functions (`User_Interface`), or return to Main.
