@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Mathematics
 {
@@ -205,6 +202,7 @@ namespace Mathematics
             {
                 Console.WriteLine("Invalid input");
             }
+            Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
             switch (Console.ReadKey().Key)
             {
                 case ConsoleKey.D1:
