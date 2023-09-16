@@ -14,6 +14,8 @@ C:\Users\ainsl\Desktop\GitHub Portfolio\Mathematics\obj\Debug\Mathematics.pdb
 C:\Users\ainsl\Desktop\Portfolio\Mathematics\bin\Debug\Mathematics.exe.config
 C:\Users\ainsl\Desktop\Portfolio\Mathematics\bin\Debug\Mathematics.exe
 C:\Users\ainsl\Desktop\Portfolio\Mathematics\bin\Debug\Mathematics.pdb
-C:\Users\ainsl\Desktop\Portfolio\Mathematics\obj\Debug\Mathematics.csprojAssemblyReference.cache
 C:\Users\ainsl\Desktop\Portfolio\Mathematics\obj\Debug\Mathematics.exe
 C:\Users\ainsl\Desktop\Portfolio\Mathematics\obj\Debug\Mathematics.pdb
+C:\Users\ainsl\Desktop\Portfolio\Mathematics\obj\Debug\Mathematics.csproj.AssemblyReference.cache
+C:\Users\ainsl\Desktop\Portfolio\Mathematics\obj\Debug\Mathematics.csproj.SuggestedBindingRedirects.cache
+C:\Users\ainsl\Desktop\Portfolio\Mathematics\obj\Debug\Mathematics.csproj.CoreCompileInputs.cache
