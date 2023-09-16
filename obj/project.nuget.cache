@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7PnoYpYTfmEVKeH6a2ztGcdfLunfRqTIULAVgoT2FVbrrh0BdGH7rpx3QXwsKLRS1yINMJZBV9TlPgXBNM/CEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ainsl\\Desktop\\Portfolio\\Mathematics\\Mathematics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ainsl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ainsl\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
