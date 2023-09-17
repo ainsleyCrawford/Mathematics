@@ -76,7 +76,7 @@ Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~
 
 Thus, to modify the triangular-number while loop into a hexagonal-number while loop, the condition was edited by replacing `n` with `(n*2)-1`, which gave the following: `while (i <= (n*2)-1) { hexagon += i; i++; }`.
 ## User Interface
-The Main method contains only two statements: `Console.Write("Welcome, user! ");` and `User_Interface();`. The logic behind this is to allow the user to cycle through the all other program methods as much as she/he desires before returning to the Main method, and thus, closing the console application.
+The Main method contains only two statements: `Console.Write("Welcome, user! ");` and `Start_Menu();`. The logic behind this is to allow the user to cycle through the all other program methods as much as she/he desires before returning to the Main method, and thus, closing the console application.
 
 Upon opening the application the user is welcomed and presented with the exhaustive list of functions:
 
@@ -88,4 +88,4 @@ To make each function interactive, the user is invited to input an argument to p
     if (Int32.TryParse(Console.ReadLine(), out input))  
       {...}  
     else {Console.WriteLine("Invalid input");} 
-At this point another switch statement reads the user's key press to either call the function it belongs to, call the menu of functions (`User_Interface`), or return to Main.
+At this point another switch statement reads the user's key press to either call the function it belongs to, call the menu of functions (`Start_Menu`), or return to Main.

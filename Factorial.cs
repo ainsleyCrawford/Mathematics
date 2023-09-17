@@ -16,20 +16,7 @@ namespace Mathematics
             }
             else Console.WriteLine("Invalid input");
 
-            Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
-            switch (Console.ReadKey().Key)
-            {
-                case ConsoleKey.D1:
-                    Console.Clear();
-                    PrintFactorial(); ;
-                    break;
-                case ConsoleKey.D2:
-                    Console.Clear();
-                    Menu.User_Interface(); ;
-                    break;
-                default:
-                    break;
-            }
+            Menus.Second_Menu("factorial");
         }
     }
 }
