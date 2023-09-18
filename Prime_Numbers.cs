@@ -21,18 +21,21 @@ namespace Mathematics
                         if (i % divisor == 0) compositeNumbers.Add(i);
                     }
                 }
-                int numbersTolimit = 1;
+                int numbersTolimit = 2;
                 List<int> primeNumbers = new List<int>();
                 while (numbersTolimit < limit)
                 {
                     if (!compositeNumbers.Contains(numbersTolimit)) primeNumbers.Add(numbersTolimit);
                     numbersTolimit++;
                 }
-                for (int i = 0; i < primeNumbers.Count - 1; i++)
+                int numberOfPrimeNumbers = primeNumbers.Count;
+                if (numberOfPrimeNumbers == 0) Console.WriteLine($"\tThere are not any prime numbers less than {limit}.");
+                else if (numberOfPrimeNumbers == 1) Console.WriteLine(primeNumbers[0] + ".");
+                else
                 {
-                    Console.Write(primeNumbers[i] + ", ");
+                    for (int i = 0; i < numberOfPrimeNumbers - 2; i++) Console.Write(primeNumbers[i] + ", ");
+                    Console.WriteLine($"{primeNumbers[^2]} and {primeNumbers[^1]}.");
                 }
-                Console.WriteLine(primeNumbers.Last() + "."); //Need exception handling
             }
             else Console.WriteLine("Invalid input");
 

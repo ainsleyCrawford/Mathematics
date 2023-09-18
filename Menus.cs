@@ -41,7 +41,7 @@ namespace Mathematics
             }
             Console.Read();
         }
-        public static void Second_Menu(string currentFunction) //need param for method
+        public static void Second_Menu(string currentFunction)
         {
             Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
             switch (Console.ReadKey().Key)
