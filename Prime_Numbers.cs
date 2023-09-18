@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Mathematics
 {
@@ -21,11 +22,17 @@ namespace Mathematics
                     }
                 }
                 int numbersTolimit = 1;
+                List<int> primeNumbers = new List<int>();
                 while (numbersTolimit < limit)
                 {
-                    if (!compositeNumbers.Contains(numbersTolimit)) Console.Write(numbersTolimit + ", ");
+                    if (!compositeNumbers.Contains(numbersTolimit)) primeNumbers.Add(numbersTolimit);
                     numbersTolimit++;
                 }
+                for (int i = 0; i < primeNumbers.Count - 1; i++)
+                {
+                    Console.Write(primeNumbers[i] + ", ");
+                }
+                Console.WriteLine(primeNumbers.Last() + "."); //Need exception handling
             }
             else Console.WriteLine("Invalid input");
 
