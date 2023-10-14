@@ -2,7 +2,7 @@
 
 namespace Mathematics
 {
-    internal class Menus
+    internal static class Menus
     {
         internal static void Start_Menu()
         {
@@ -29,20 +29,23 @@ namespace Mathematics
                         Hexagonal_Numbers.HexagonalLoop();
                         break;
                     default:
-                        Console.Write($"{function} is not an option. ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"{function} is not an option.");
+                        Console.ResetColor();
                         Start_Menu();
                         break;
                 }
             }
             else
             {
-                Console.WriteLine("Invalid input");
+                Error.InvalidInput();
+                Console.ResetColor();
                 Start_Menu();
             }
-            Console.Read();
         }
-        public static void Second_Menu(string currentFunction)
+        internal static void Second_Menu(string currentFunction)
         {
+            Console.ResetColor();
             Console.WriteLine("\n\nKey 1 to continue with this function, 2 to return to the main menu, or any other key to close the program.");
             switch (Console.ReadKey().Key)
             {

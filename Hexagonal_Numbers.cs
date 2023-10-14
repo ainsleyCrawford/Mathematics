@@ -18,7 +18,7 @@ namespace Mathematics
                 }
                 Console.WriteLine($"The nth hexagonal number of {n} is {hexagon}.");
             }
-            else Console.WriteLine("Invalid input");
+            else Error.InvalidInput();
 
             Menus.Second_Menu("hexagon");
         }

@@ -11,6 +11,7 @@ namespace Mathematics
             if (Int32.TryParse(Console.ReadLine(), out d))
             {
                 Console.WriteLine("The Fibonacci numbers below " + d + " are the following:");
+                Console.ForegroundColor = ConsoleColor.Green;
                 int a = 0, b = 1, c = 0;
                 while (c < d)
                 {
@@ -22,7 +23,7 @@ namespace Mathematics
                     b = c;
                 }
             }
-            else Console.WriteLine("Invalid input");
+            else Error.InvalidInput();
 
             Menus.Second_Menu("fibonacci");
         }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Mathematics
 {
@@ -29,15 +28,24 @@ namespace Mathematics
                     numbersTolimit++;
                 }
                 int numberOfPrimeNumbers = primeNumbers.Count;
-                if (numberOfPrimeNumbers == 0) Console.WriteLine($"\tThere are not any prime numbers less than {limit}.");
-                else if (numberOfPrimeNumbers == 1) Console.WriteLine(primeNumbers[0] + ".");
+                if (numberOfPrimeNumbers == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine($"\tThere are not any prime numbers less than {limit}.");
+                }
+                else if (numberOfPrimeNumbers == 1)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(primeNumbers[0] + ".");
+                }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     for (int i = 0; i < numberOfPrimeNumbers - 2; i++) Console.Write(primeNumbers[i] + ", ");
                     Console.WriteLine($"{primeNumbers[^2]} and {primeNumbers[^1]}.");
                 }
             }
-            else Console.WriteLine("Invalid input");
+            else Error.InvalidInput();
 
             Menus.Second_Menu("prime");
         }

@@ -16,9 +16,10 @@ namespace Mathematics
                     triangle += i;
                     i++;
                 }
+                Console.ForegroundColor = ConsoleColor.Green; 
                 Console.WriteLine($"The nth triangular number of {n} is {triangle}.");
             }
-            else Console.WriteLine("Invalid input");
+            else Error.InvalidInput();
 
             Menus.Second_Menu("triangle");
         }
