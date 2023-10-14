@@ -76,7 +76,7 @@ Following the pattern in Figure 1, two variables were initialised: `int i = 1`, 
                                                                              O                     O   O   O
                                                                                                      O   O
                                                                                                        O
-*Figure 3: The first six pentagonal numbers represented diagrammatically.*  
+*Figure 3: The first six pentagonal numbers represented diagrammatically. The leftmost vertex is shared.*  
 ### Logic
 ## Hexagonal Numbers
 ### Description
