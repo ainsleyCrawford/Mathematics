@@ -4,9 +4,11 @@ The objectives of this project are twofold: to improve by problem-solving abilit
 
 ## Table of Contents
 - [Fibonacci Sequence](#the-fibonacci-sequence)  
-- [Prime Numbers](#prime-numbers)  
-- [Triangular Numbers](#triangular-numbers)  
+- [Prime Numbers](#prime-numbers)
 - [Factorials](#factorials)
+- [Square Numbers](#square-numbers)
+- [Triangular Numbers](#triangular-numbers)  
+- [Pentagonal Numbers](#pentagonal-numbers)
 - [Hexagonal Numbers](#hexagonal-numbers)  
 - [User Interface](#user-interface)
 
@@ -25,23 +27,6 @@ This sequence requires two numbers to be added to generate a third, so three var
 A positive integer that is the product of two smaller numbers is called composite; all other positive integers greater than 1 are prime. Prime numbers are prominent in number theory because every composite may be factorised into a unique set of prime numbers. This function lists all prime numbers up to a user-specified upper limit.
 ### Logic
 Given that all positive integers are either composite or prime, and all composite numbers are multiples of prime numbers, the solution chosen was to add all composite numbers to a list and print to the console all numbers not in this list. The for loop `for (int divisor = 2; divisor <= Math.Sqrt(i); divisor++)` divides every integer from up to the user-specfied limit against divisors which increment from two to the square root of the limit. It was observed that surpassing the square root is excessive because all composite numbers have a prime factor less than the square root.
-## Triangular Numbers
-### Description
-If a particular number of equally spaced dots can form an equilateral triangle (Figure 1), that number may be called triangular.
-
-    O           O O         O O O       O O O O         O O O O O        O O O O O O         O O O O O O O
-                 O           O O         O O O           O O O O          O O O O O           O O O O O O
-                              O           O O             O O O            O O O O             O O O O O
-                                           O               O O              O O O               O O O O
-                                                            O                O O                 O O O
-                                                                              O                   O O
-                                                                                                   O
-*Figure 1: The first seven triangular numbers represented diagrammatically.*  
-This function, thus, reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
-### Logic
-Following the pattern in Figure 1, two variables were initialised: `int i = 1`, where `i` is the iteration; and `int triangle = 0`, which represents triangular numbers. The following while loop was, then, sufficient: 
-
-    while (i <= n){ triangle += i; i++; }
 ## Factorials
 ### Description
 To find the factorial of a positive integer multiply that integer by all lesser positive integers. Thus, the factorial of five is found by multiplying five by four, three and two, resulting in 120. This is written notationally as *5! = 5 x 4 x 3 x 2 x 1 = 120*.
@@ -50,20 +35,63 @@ To find the factorial of a positive integer multiply that integer by all lesser 
 
 The following for loop multiplies the variable `factorial` by the next increment of `i` until the user-specified input `n`:  
 `for (int i = 1; i <= n; i++) { factorial *= i; }`.
+## Triangular Numbers
+### Description
+If a particular number of equally spaced dots can form an equilateral triangle (Figure 1), that number may be called triangular.
+
+    O          O O          O O O          O O O O          O O O O O          O O O O O O          O O O O O O O
+                O            O O            O O O            O O O O            O O O O O            O O O O O O
+                              O              O O              O O O              O O O O              O O O O O
+                                              O                O O                O O O                O O O O
+                                                                O                  O O                  O O O
+                                                                                    O                    O O
+                                                                                                          O
+*Figure 1: The first seven triangular numbers represented diagrammatically.*  
+This function, thus, reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
+### Logic
+Following the pattern in Figure 1, two variables were initialised: `int i = 1`, where `i` is the iteration; and `int triangle = 0`, which represents triangular numbers. The following while loop was, then, sufficient: 
+
+    while (i <= n){ triangle += i; i++; }
+## Square Numbers
+### Description
+    O          O O          O O O          O O O O          O O O O O          O O O O O O          O O O O O O O
+               O O          O O O          O O O O          O O O O O          O O O O O O          O O O O O O O
+                            O O O          O O O O          O O O O O          O O O O O O          O O O O O O O
+                                           O O O O          O O O O O          O O O O O O          O O O O O O O
+                                                            O O O O O          O O O O O O          O O O O O O O
+                                                                               O O O O O O          O O O O O O O
+                                                                                                    O O O O O O O
+*Figure 2: The first seven square numbers represented diagrammatically.*  
+### Logic
+## Pentagonal Numbers
+### Description
+    O           O O             O O O               O O O O                 O O O O O                 O O O O O O
+               O   O           O O   O             O O O   O               O O O O   O               O O O O O   O
+                 O            O   O   O           O O   O   O             O O O   O   O             O O O O   O   O
+                                O   O            O   O   O   O           O O   O   O   O           O O O   O   O   O
+                                  O                O   O   O            O   O   O   O   O         O O   O   O   O   O
+                                                     O   O                O   O   O   O          O   O   O   O   O   O
+                                                       O                    O   O   O              O   O   O   O   O
+                                                                              O   O                  O   O   O   O
+                                                                                O                      O   O   O
+                                                                                                         O   O
+                                                                                                           O
+*Figure 3: The first six pentagonal numbers represented diagrammatically.*  
+### Logic
 ## Hexagonal Numbers
 ### Description
-Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 2 illustrates that a hexagonal number is one where that number of dots form the outline(s) of regular hexagons where all hexagons share a single vertex.
+Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 4 illustrates that a hexagonal number is one where that number of dots form the outline(s) of regular hexagons where all hexagons share a single vertex.
 
-    O             O O             O O O              O O O O                  O O O O O
-                O     O         O       O          O         O              O           O
-                  O O         O   O O     O      O   O O O     O          O   O O O O     O
-                                O     O O      O   O       O     O      O   O         O     O
-                                  O O O          O   O O     O O      O   O   O O O     O     O
-                                                   O     O O O          O   O       O     O O
-                                                     O O O O              O   O O     O O O
-                                                                            O     O O O O
-                                                                              O O O O O
-*Figure 2: The first five hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
+    O            O O                O O O                    O O O O                        O O O O O
+               O     O            O       O                O         O                    O           O
+                 O O            O   O O     O            O   O O O     O                O   O O O O     O
+                                  O     O O            O   O       O     O            O   O         O     O
+                                    O O O                O   O O     O O            O   O   O O O     O     O
+                                                           O     O O O                O   O       O     O O
+                                                             O O O O                    O   O O     O O O
+                                                                                          O     O O O O
+                                                                                            O O O O O
+*Figure 4: The first five hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
 ### Logic
 Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~, 15, ~~21~~, 28, ~~36~~, 45, ~~55~~, 66, ~~78~~, ad infinitum. Table 1 helps us to further understand this relationship: *n<sub>h</sub> = 2\*n<sub>t</sub> - 1*. For instance, the fourth hexagonal number (*n<sub>h</sub> = 4*) and the seventh triangular number (*n<sub>t</sub> = 7*) are equal (*28*).
 
