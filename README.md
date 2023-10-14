@@ -54,43 +54,43 @@ Following the pattern in Figure 1, two variables were initialised: `int i = 1`, 
     while (i <= n){ triangle += i; i++; }
 ## Square Numbers
 ### Description
-    O         O O         O O O         O O O O         O O O O O         O O O O O O         O O O O O O O
-              O O         O O O         O O O O         O O O O O         O O O O O O         O O O O O O O
-                          O O O         O O O O         O O O O O         O O O O O O         O O O O O O O
-                                        O O O O         O O O O O         O O O O O O         O O O O O O O
-                                                        O O O O O         O O O O O O         O O O O O O O
-                                                                          O O O O O O         O O O O O O O
-                                                                                              O O O O O O O
+    O        O O        O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
+             O O        O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
+                        O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
+                                     O O O O        O O O O O        O O O O O O        O O O O O O O
+                                                    O O O O O        O O O O O O        O O O O O O O
+                                                                     O O O O O O        O O O O O O O
+                                                                                        O O O O O O O
 *Figure 2: The first seven square numbers represented diagrammatically.*  
 ### Logic
 ## Pentagonal Numbers
 ### Description
-    O          O O             O O O              O O O O                O O O O O                O O O O O O
-              O   O           O O   O            O O O   O              O O O O   O              O O O O O   O
-                O            O   O   O          O O   O   O            O O O   O   O            O O O O   O   O
-                               O   O           O   O   O   O          O O   O   O   O          O O O   O   O   O
-                                 O               O   O   O           O   O   O   O   O        O O   O   O   O   O
-                                                   O   O               O   O   O   O         O   O   O   O   O   O
-                                                     O                   O   O   O             O   O   O   O   O
-                                                                           O   O                 O   O   O   O
-                                                                             O                     O   O   O
-                                                                                                     O   O
-                                                                                                       O
+    O         O O           O O O             O O O O               O O O O O                 O O O O O O
+             O   O         O O   O           O O O   O             O O O O   O               O O O O O   O
+               O          O   O   O         O O   O   O           O O O   O   O             O O O O   O   O
+                            O   O          O   O   O   O         O O   O   O   O           O O O   O   O   O
+                              O              O   O   O          O   O   O   O   O         O O   O   O   O   O
+                                                O   O              O   O   O   O         O   O   O   O   O   O
+                                                  O                  O   O   O             O   O   O   O   O
+                                                                       O   O                 O   O   O   O
+                                                                         O                     O   O   O
+                                                                                                 O   O
+                                                                                                   O
 *Figure 3: The first six pentagonal numbers represented diagrammatically. The leftmost vertex is shared.*  
 ### Logic
 ## Hexagonal Numbers
 ### Description
 Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 4 illustrates that a hexagonal number is one where that number of dots form the outline(s) of regular hexagons where all hexagons share a single vertex.
 
-    O           O O               O O O                   O O O O                       O O O O O
-              O     O           O       O               O         O                   O           O
-                O O           O   O O     O           O   O O O     O               O   O O O O     O
-                                O     O O           O   O       O     O           O   O         O     O
-                                  O O O               O   O O     O O           O   O   O O O     O     O
-                                                        O     O O O               O   O       O     O O
-                                                          O O O O                   O   O O     O O O
-                                                                                      O     O O O O
-                                                                                        O O O O O
+    O          O O              O O O                  O O O O                      O O O O O
+             O     O          O       O              O         O                  O           O
+               O O          O   O O     O          O   O O O     O              O   O O O O     O
+                              O     O O          O   O       O     O          O   O         O     O
+                                O O O              O   O O     O O          O   O   O O O     O     O
+                                                     O     O O O              O   O       O     O O
+                                                       O O O O                  O   O O     O O O
+                                                                                  O     O O O O
+                                                                                    O O O O O
 *Figure 4: The first five hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
 ### Logic
 Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~, 15, ~~21~~, 28, ~~36~~, 45, ~~55~~, 66, ~~78~~, ad infinitum. Table 1 helps us to further understand this relationship: *n<sub>h</sub> = 2\*n<sub>t</sub> - 1*. For instance, the fourth hexagonal number (*n<sub>h</sub> = 4*) and the seventh triangular number (*n<sub>t</sub> = 7*) are equal (*28*).
