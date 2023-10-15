@@ -100,6 +100,15 @@ A pentagonal number is to a pentagon that which a triangular number and a square
 *Figure 3: The first six pentagonal numbers represented diagrammatically. The leftmost vertex is shared.*
 Some analysis reveals that the additional number of dots increases by three with each subsequent increase between pentagonal number iterations.
 ### Logic
+Minor modificatons of the [pentagonal numbers](#pentagonal-numbers) logic provides a satisfactory solution.
+
+    int i = 1, diff = 1, pentagon = 0;
+    while (i <= n)
+    {
+        pentagon += diff;
+        diff += 3;
+        i++;
+    }
 ## Hexagonal Numbers
 ### Description
 Beginning with 1, every other [triangular number](#triangular-numbers) is a hexagonal number. Figure 4 illustrates that a hexagonal number is one where that number of dots form the outline(s) of regular hexagons where all hexagons share a single vertex.
