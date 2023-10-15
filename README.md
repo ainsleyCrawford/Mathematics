@@ -84,6 +84,8 @@ Declaring and initialising `int i = 1, difference = 1, square = 0;`, where `i` i
     }
 ## Pentagonal Numbers
 ### Description
+A pentagonal number is to a pentagon that which a triangular number and a square number are to a triangle and a square, respectively. Unlike the first two concepts, a visual representation of a pentagonal number (*Figure 3*) cannot be rotationally symmetrical.
+
     O         O O           O O O             O O O O               O O O O O                O O O O O O
              O   O         O O   O           O O O   O             O O O O   O              O O O O O   O
                O          O   O   O         O O   O   O           O O O   O   O            O O O O   O   O
@@ -95,7 +97,8 @@ Declaring and initialising `int i = 1, difference = 1, square = 0;`, where `i` i
                                                                         O                     O   O   O
                                                                                                 O   O
                                                                                                   O
-*Figure 3: The first six pentagonal numbers represented diagrammatically. The leftmost vertex is shared.*  
+*Figure 3: The first six pentagonal numbers represented diagrammatically. The leftmost vertex is shared.*
+Some analysis reveals that the additional number of dots increases by three with each subsequent increase between pentagonal number iterations.
 ### Logic
 ## Hexagonal Numbers
 ### Description
