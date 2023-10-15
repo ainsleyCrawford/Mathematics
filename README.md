@@ -34,7 +34,11 @@ To find the factorial of a positive integer multiply that integer by all lesser 
 <p align="center"><i>n! = n x (n - 1) x (n - 2) x ... x 2 x 1</i>.</p>
 
 The following for loop multiplies the variable `factorial` by the next increment of `i` until the user-specified input `n`:  
-`for (int i = 1; i <= n; i++) { factorial *= i; }`.
+
+    for (int i = 1; i <= n; i++) 
+    { 
+        factorial *= i;
+    }
 ## Triangular Numbers
 ### Description
 If a particular number of equally spaced dots can form an equilateral triangle (*Figure 1*), that number may be called triangular.
@@ -51,7 +55,11 @@ This function, thus, reads a a user input (which must be a positive whole number
 ### Logic
 Following the pattern in *Figure 1*, two variables were initialised: `int i = 1`, where `i` is the iteration; and `int triangle = 0`, which represents triangular numbers. The following while loop was, then, sufficient: 
 
-    while (i <= n){ triangle += i; i++; }
+    while (i <= n)
+    { 
+        triangle += i;
+        i++;
+    }
 ## Square Numbers
 ### Description
 A number of equally space dots that may form a square (*Figure 2*) is a square number.
@@ -67,7 +75,12 @@ Inspection of *Figure 2* reveals that from the first square number to the second
 ### Logic
 Declaring and initialising `int i = 1, difference = 1, square = 0;`, where `i` is the iteration, `diff` is the increase in the area from the previous square number to the current one and `square` is the area of the current square number, the square number of `i` is output by the following loop:
     
-    while (i <= n){ square += diff; diff += 2; i++ }
+    while (i <= n)
+    { 
+        square += diff;
+        diff += 2;
+        i++
+    }
 ## Pentagonal Numbers
 ### Description
     O         O O           O O O             O O O O               O O O O O                O O O O O O
