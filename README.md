@@ -37,7 +37,7 @@ The following for loop multiplies the variable `factorial` by the next increment
 `for (int i = 1; i <= n; i++) { factorial *= i; }`.
 ## Triangular Numbers
 ### Description
-If a particular number of equally spaced dots can form an equilateral triangle (Figure 1), that number may be called triangular.
+If a particular number of equally spaced dots can form an equilateral triangle (*Figure 1*), that number may be called triangular.
 
     O         O O         O O O         O O O O         O O O O O         O O O O O O         O O O O O O O
                O           O O           O O O           O O O O           O O O O O           O O O O O O
@@ -49,11 +49,12 @@ If a particular number of equally spaced dots can form an equilateral triangle (
 *Figure 1: The first seven triangular numbers represented diagrammatically.*  
 This function, thus, reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
 ### Logic
-Following the pattern in Figure 1, two variables were initialised: `int i = 1`, where `i` is the iteration; and `int triangle = 0`, which represents triangular numbers. The following while loop was, then, sufficient: 
+Following the pattern in *Figure 1*, two variables were initialised: `int i = 1`, where `i` is the iteration; and `int triangle = 0`, which represents triangular numbers. The following while loop was, then, sufficient: 
 
     while (i <= n){ triangle += i; i++; }
 ## Square Numbers
 ### Description
+A number of equally space dots that may form a square (*Figure 2*) is a square number.
     O        O O        O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
              O O        O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
                         O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
@@ -61,7 +62,8 @@ Following the pattern in Figure 1, two variables were initialised: `int i = 1`, 
                                                     O O O O O        O O O O O O        O O O O O O O
                                                                      O O O O O O        O O O O O O O
                                                                                         O O O O O O O
-*Figure 2: The first seven square numbers represented diagrammatically.*  
+*Figure 2: The first seven square numbers represented diagrammatically.*
+Inspection of *Figure 2* reveals that from the first square number to the second is an increase of three dots, from the second to the third is an increase of five, and from the third to the fourth is an increase of seven. This pattern of the additional number of dots increases by two each time is persistent and is easily coded. 
 ### Logic
 ## Pentagonal Numbers
 ### Description
