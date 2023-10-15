@@ -10,11 +10,11 @@ namespace Mathematics
             Console.Write("Enter a value for n to find the corresponding nth square number: ");
             if (Int32.TryParse(Console.ReadLine(), out n))
             {
-                int i = 1, difference = 1, square = 0;
+                int i = 1, diff = 1, square = 0;
                 while (i <= n)
                 {
-                    square += difference;
-                    difference += 2;
+                    square += diff;
+                    diff += 2;
                     i++;
                 }
                 Console.ForegroundColor = ConsoleColor.Green;

@@ -7,7 +7,7 @@ namespace Mathematics
         internal static void Start_Menu()
         {
             Console.WriteLine("Enter the number which corresponds to the function you would like to use: \n " +
-                "1 - Fibonacci Sequence; \n 2 - Prime Numbers; \n 3 - Factorial; \n 4 - Triangular Numbers; \n 5 - Square Numbers; \n 6 - Heaxagonal Numbers;");
+                "1 - Fibonacci Sequence; \n 2 - Prime Numbers; \n 3 - Factorial; \n 4 - Triangular Numbers; \n 5 - Square Numbers; \n 6 - Pentagonal Numbers; \n 7 - Heaxagonal Numbers;");
             int function;
             if (Int32.TryParse(Console.ReadLine(), out function))
             {
@@ -29,6 +29,9 @@ namespace Mathematics
                         Square_Numbers.SquareLoop();
                         break;
                     case 6:
+                        Pentagonal_Numbers.PentagonalLoop();
+                        break;
+                    case 7:
                         Hexagonal_Numbers.HexagonalLoop();
                         break;
                     default:
@@ -70,6 +73,9 @@ namespace Mathematics
                             break;
                         case "square":
                             Square_Numbers.SquareLoop();
+                            break;
+                        case "pentagon":
+                            Pentagonal_Numbers.PentagonalLoop();
                             break;
                         case "hexagon":
                             Hexagonal_Numbers.HexagonalLoop();

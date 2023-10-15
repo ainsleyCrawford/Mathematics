@@ -16,6 +16,7 @@ namespace Mathematics
                     hexagon += i;
                     i++;
                 }
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"The nth hexagonal number of {n} is {hexagon}.");
             }
             else Error.InvalidInput();
