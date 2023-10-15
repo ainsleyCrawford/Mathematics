@@ -7,7 +7,7 @@ namespace Mathematics
         internal static void Start_Menu()
         {
             Console.WriteLine("Enter the number which corresponds to the function you would like to use: \n " +
-                "1 - Fibonacci Sequence; \n 2 - Prime Numbers; \n 3 - Triangular Numbers; \n 4 - Factorial; \n 5 - Heaxagonal Numbers;");
+                "1 - Fibonacci Sequence; \n 2 - Prime Numbers; \n 3 - Factorial; \n 4 - Triangular Numbers; \n 5 - Square Numbers; \n 6 - Heaxagonal Numbers;");
             int function;
             if (Int32.TryParse(Console.ReadLine(), out function))
             {
@@ -20,12 +20,15 @@ namespace Mathematics
                         Prime_Numbers.Prime();
                         break;
                     case 3:
-                        Triangular_Numbers.TriangularLoop();
-                        break;
-                    case 4:
                         Factorial.PrintFactorial();
                         break;
+                    case 4:
+                        Triangular_Numbers.TriangularLoop();
+                        break;
                     case 5:
+                        Square_Numbers.SquareLoop();
+                        break;
+                    case 6:
                         Hexagonal_Numbers.HexagonalLoop();
                         break;
                     default:
@@ -59,11 +62,14 @@ namespace Mathematics
                         case "prime":
                             Prime_Numbers.Prime();
                             break;
+                        case "factorial":
+                            Factorial.PrintFactorial();
+                            break;
                         case "triangle":
                             Triangular_Numbers.TriangularLoop();
                             break;
-                        case "factorial":
-                            Factorial.PrintFactorial();
+                        case "square":
+                            Square_Numbers.SquareLoop();
                             break;
                         case "hexagon":
                             Hexagonal_Numbers.HexagonalLoop();
