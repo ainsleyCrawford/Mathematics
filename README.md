@@ -63,6 +63,7 @@ Following the pattern in *Figure 1*, two variables were initialised: `int i = 1`
 ## Square Numbers
 ### Description
 A number of equally space dots that may form a square (*Figure 2*) is a square number.
+
     O        O O        O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
              O O        O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
                         O O O        O O O O        O O O O O        O O O O O O        O O O O O O O
