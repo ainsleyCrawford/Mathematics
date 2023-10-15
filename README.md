@@ -65,6 +65,9 @@ A number of equally space dots that may form a square (*Figure 2*) is a square n
 *Figure 2: The first seven square numbers represented diagrammatically.*
 Inspection of *Figure 2* reveals that from the first square number to the second is an increase of three dots, from the second to the third is an increase of five, and from the third to the fourth is an increase of seven. This pattern of the additional number of dots increases by two each time is persistent and is easily coded. 
 ### Logic
+Declaring and initialising `int i = 1, difference = 1, square = 0;`, where `i` is the iteration, `diff` is the increase in the area from the previous square number to the current one and `square` is the area of the current square number, the square number of `i` is output by the following loop:
+    
+    while (i <= n){ square += diff; diff += 2; i++ }
 ## Pentagonal Numbers
 ### Description
     O         O O           O O O             O O O O               O O O O O                O O O O O O
