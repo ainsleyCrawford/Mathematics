@@ -10,14 +10,18 @@ namespace Mathematics
             Console.Write("Enter a value for n to find the corresponding nth triangular number: ");
             if (Int32.TryParse(Console.ReadLine(), out n))
             {
-                int i = 1, triangle = 0;
-                while (i <= n)
+                if (n > 0)
                 {
-                    triangle += i;
-                    i++;
+                    int i = 1, triangle = 0;
+                    while (i <= n)
+                    {
+                        triangle += i;
+                        i++;
+                    }
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"The nth triangular number of {n} is {triangle}.");
                 }
-                Console.ForegroundColor = ConsoleColor.Green; 
-                Console.WriteLine($"The nth triangular number of {n} is {triangle}.");
+                else Error.LesserThanOne();
             }
             else Error.InvalidInput();
 
