@@ -7,7 +7,7 @@ namespace Mathematics
         internal static void TriangularLoop()
         {
             int n;
-            Console.Write("Enter a value for n to find the corresponding nth triangular number: ");
+            Console.Write("Enter a value to calculate its corresponding triangular number: ");
             if (Int32.TryParse(Console.ReadLine(), out n))
             {
                 if (n > 0)
