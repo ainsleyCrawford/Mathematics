@@ -50,7 +50,8 @@ If a particular number of equally spaced dots can form an equilateral triangle (
                                                             O                 O O                 O O O
                                                                                O                   O O
                                                                                                     O
-*Figure 1: The first seven triangular numbers represented diagrammatically.*  
+*Figure 1: The first seven triangular numbers represented diagrammatically.*
+
 This function, thus, reads a a user input (which must be a positive whole number) and sums every integer from 1 through this number.
 ### Logic
 Following the pattern in *Figure 1*, two variables were initialised: `int i = 1`, where `i` is the iteration; and `int triangle = 0`, which represents triangular numbers. The following while loop was, then, sufficient: 
@@ -72,11 +73,12 @@ A number of equally space dots that may form a square (*Figure 2*) is a square n
                                                                      O O O O O O        O O O O O O O
                                                                                         O O O O O O O
 *Figure 2: The first seven square numbers represented diagrammatically.*
+
 Inspection of *Figure 2* reveals that from the first square number to the second is an increase of three dots, from the second to the third is an increase of five, and from the third to the fourth is an increase of seven. This pattern of the additional number of dots increases by two each time is persistent and is easily coded. 
 ### Logic
-Declaring and initialising `int i = 1, difference = 1, square = 0;`, where `i` is the iteration, `diff` is the increase in the area from the previous square number to the current one and `square` is the area of the current square number, the square number of `i` is output by the following loop:
+Declaring and initialising `int i = 1, difference = 1, square = 0;`, where `i` is the iteration, `diff` is the increase in the area from the previous square number to the current one and `square` is the area of the current square number, the square number of a given input, `n`, is output by the following loop. The System.Math.Abs() method extends functionality to negative numbers by returning the absolute value of `n` to the loop.
     
-    while (i <= n)
+    while (i <= Math.Abs(n))
     { 
         square += diff;
         diff += 2;
@@ -98,6 +100,7 @@ A pentagonal number is to a pentagon that which a triangular number and a square
                                                                                                 O   O
                                                                                                   O
 *Figure 3: The first six pentagonal numbers represented diagrammatically. The leftmost vertex is shared.*
+
 Some analysis reveals that the additional number of dots increases by three with each subsequent increase between pentagonal number iterations.
 ### Logic
 Minor modificatons of the [square numbers](#square-numbers) logic provides a satisfactory solution.
@@ -123,6 +126,7 @@ Beginning with 1, every other [triangular number](#triangular-numbers) is a hexa
                                                                                   O     O O O O
                                                                                     O O O O O
 *Figure 4: The first five hexagonal numbers represented diagrammatically. The bottom-left vertex is shared.*
+
 ### Logic
 Alternating triangular numbers are hexagonal in this manner: 1, ~~3~~, 6, ~~10~~, 15, ~~21~~, 28, ~~36~~, 45, ~~55~~, 66, ~~78~~, ad infinitum. Table 1 helps us to further understand this relationship: *n<sub>h</sub> = 2\*n<sub>t</sub> - 1*. For instance, the fourth hexagonal number (*n<sub>h</sub> = 4*) and the seventh triangular number (*n<sub>t</sub> = 7*) are equal (*28*).
 
