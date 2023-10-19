@@ -9,11 +9,11 @@ namespace Mathematics
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Invalid input");
         }
-        internal static void LesserThanZero()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Invalid input: n must not be lesser than zero.");
-        }
+        //internal static void LesserThanZero()
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Red;
+        //    Console.WriteLine("Invalid input: n must not be lesser than zero.");
+        //}
         internal static void LesserThanOne()
         {
             Console.ForegroundColor = ConsoleColor.Red;

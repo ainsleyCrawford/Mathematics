@@ -7,17 +7,22 @@ namespace Mathematics
         internal static void HexagonalLoop()
         {
             int n;
-            Console.Write("Enter a value for n to find the corresponding nth hexagonal number: ");
+            Console.Write("Enter a value to calculate its corresponding hexagonal number: ");
             if (Int32.TryParse(Console.ReadLine(), out n))
             {
-                int i = 1, hexagon = 0;
-                while (i <= (n * 2) - 1)
+                if (n > 0)
                 {
-                    hexagon += i;
-                    i++;
+                    int i = 1, hexagon = 0;
+                    while (i <= (n * 2) - 1)
+                    {
+                        hexagon += i;
+                        i++;
+                    }
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    string oI = Ordinal_Indicator.GetSuffix(n);
+                    Console.WriteLine($"The {n}{oI} hexagonal number is {hexagon}.");
                 }
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"The nth hexagonal number of {n} is {hexagon}.");
+                else Error.LesserThanOne();
             }
             else Error.InvalidInput();
 
