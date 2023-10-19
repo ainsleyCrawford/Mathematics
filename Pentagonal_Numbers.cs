@@ -20,11 +20,8 @@ namespace Mathematics
                         i++;
                     }
                     Console.ForegroundColor = ConsoleColor.Green;
-                    string ordinalIndicator = "th";
-                    if (n % 10 == 1 && n != 11) ordinalIndicator = "st";
-                    else if (n % 10 == 2 && n != 12) ordinalIndicator = "nd";
-                    else if (n % 10 == 3 && n != 13) ordinalIndicator = "rd";
-                    Console.WriteLine($"The {n}{ordinalIndicator} pentagonal number is {pentagon}.");
+                    string oI = Ordinal_Indicator.GetSuffix(n);
+                    Console.WriteLine($"The {n}{oI} pentagonal number is {pentagon}.");
                 }
                 else Error.LesserThanOne();
             }

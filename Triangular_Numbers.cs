@@ -19,7 +19,8 @@ namespace Mathematics
                         i++;
                     }
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine($"The nth triangular number of {n} is {triangle}.");
+                    string oI = Ordinal_Indicator.GetSuffix(n);
+                    Console.WriteLine($"The {n}{oI} triangular number is {triangle}.");
                 }
                 else Error.LesserThanOne();
             }
