@@ -14,7 +14,7 @@ namespace Mathematics
                 {
                     int factorial = 1;
                     Console.ForegroundColor = ConsoleColor.Green;
-                    for (int i = 1; i <= n; i++) factorial *= i;
+                    for (int i = 2; i <= n; i++) factorial *= i;
                     Console.WriteLine($"The factorial of {n} is {factorial}.");
                     Console.ResetColor();
                 }
